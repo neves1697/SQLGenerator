@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../Styles/SliderBar.css";
+import "../Styles/SliderBar.scss";
 import { FaBars } from "react-icons/fa";
 
 const SlideBar = () => {
