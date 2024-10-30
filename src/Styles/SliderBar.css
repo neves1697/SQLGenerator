@@ -1,0 +1,50 @@
+/* Estilos para a slidebar */
+.app {
+    display: flex;
+}
+
+.slidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.slidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.slidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.slidebar li {
+    margin-bottom: 1em;
+}
+
+.slidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.slidebar a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o conteúdo principal */
+.content {
+    flex: 1;
+    background-color: #f4f4f4;
+}
+
+button {
+    background: none;      /* Remove o background padrão */
+    border: none;          /* Remove a borda */
+    outline: none;         /* Remove o contorno ao focar */
+    padding: 0;            /* Remove o padding padrão */
+    margin: 0;             /* Remove o margin padrão */
+    cursor: pointer;       /* Muda o cursor para indicar que é clicável */
+}
