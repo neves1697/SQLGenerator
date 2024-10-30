@@ -27,7 +27,9 @@ const SlideBar = () => {
                         </li>
                     </ul>
                 )}
+                
             </div>
+            
         </>
     );
 };

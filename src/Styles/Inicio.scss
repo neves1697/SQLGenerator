@@ -13,4 +13,10 @@
 .textos{
     background-color: #4a4a4a; /* Tom de cinza escuro */
     border-radius: 10px;
+    
+    p{
+        padding: 0 20px; /* 0px para cima e para baixo, 20px para esquerda e direita */
+        width: 700px;
+        height: 80px;
+    }
 }
