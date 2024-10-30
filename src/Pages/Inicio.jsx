@@ -4,7 +4,9 @@ import "../Styles/Inicio.css";
 const Inicio = () => {
     return <>
         <div className="container-home">
-            <p>Inicio</p>
+            <div className="container-interno">
+                <h1>SQL Generator</h1>
+            </div>
         </div>
     </>
 }

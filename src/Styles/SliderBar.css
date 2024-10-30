@@ -10,12 +10,15 @@
     color: #fff;
     padding: 20px;
     text-align: start;
-    transition: width 0.3s; /* Transição para suavizar o efeito */
+    transition: width 0.3s;
+    /* Transição para suavizar o efeito */
 }
 
 .slidebar.collapsed {
-    width: 50px; /* Largura reduzida quando recolhida */
-    padding: 20px 5px; /* Ajusta o padding */
+    width: 50px;
+    /* Largura reduzida quando recolhida */
+    padding: 20px 5px;
+    /* Ajusta o padding */
 }
 
 .slidebar ul {
@@ -35,6 +38,8 @@
 
 .slidebar a:hover {
     text-decoration: underline;
+    text-decoration: none;
+    background-color: #4a4a4a; /* Tom de cinza escuro */
 }
 
 /* Estilos para o conteúdo principal */
@@ -44,10 +49,16 @@
 }
 
 button {
-    background: none;      /* Remove o background padrão */
-    border: none;          /* Remove a borda */
-    outline: none;         /* Remove o contorno ao focar */
-    padding: 0;            /* Remove o padding padrão */
-    margin: 0;             /* Remove o margin padrão */
-    cursor: pointer;       /* Muda o cursor para indicar que é clicável */
+    background: none;
+    /* Remove o background padrão */
+    border: none;
+    /* Remove a borda */
+    outline: none;
+    /* Remove o contorno ao focar */
+    padding: 0;
+    /* Remove o padding padrão */
+    margin: 0;
+    /* Remove o margin padrão */
+    cursor: pointer;
+    /* Muda o cursor para indicar que é clicável */
 }

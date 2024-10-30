@@ -1,6 +1,12 @@
 .container-home {
     display: flex;
+    justify-content: center;
     background: linear-gradient(135deg, #333333ef, #3a3939ef, #454343ef, #515050ef);
     width: 100%;
     height: 100%;
 }
+
+.container-interno {
+    color: #b0b0b0; /* Cinza claro com um tom pastel */
+}
+
