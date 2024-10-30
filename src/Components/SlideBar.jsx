@@ -25,6 +25,9 @@ const SlideBar = () => {
                         <li>
                             <Link to="/Consultas">Consultas</Link>
                         </li>
+                        <li>
+                            <Link to="/database">Banco de dados</Link>
+                        </li>
                     </ul>
                 )}
                 
