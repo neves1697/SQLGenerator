@@ -5,6 +5,11 @@ import Inicio from "../Pages/Inicio";
 import BancoDeDados from "../Components/BancoDeDados";
 
 const Rotas = () => {
+
+    const banco = {
+        url: "http://localhost:5000/tabelas"
+    }
+
     return <>
         <Routes>
             <Route path="/inicio" element={<Inicio />} />

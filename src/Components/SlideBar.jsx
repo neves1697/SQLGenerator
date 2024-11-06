@@ -23,16 +23,14 @@ const SlideBar = () => {
                             <Link to="/inicio">Início</Link>
                         </li>
                         <li>
-                            <Link to="/Consultas">Consultas</Link>
+                            <Link to="/consultas">Consultas</Link>
                         </li>
                         <li>
-                            <Link to="/database">Banco de dados</Link>
+                            <Link to="/database">Banco de dados</Link> {/* Rota interna */}
                         </li>
                     </ul>
                 )}
-                
             </div>
-            
         </>
     );
 };

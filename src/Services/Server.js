@@ -34,6 +34,16 @@ app.get('/tabelas', (req, res) => {
     });
 });
 
+// Adicione esta rota ao seu arquivo server.js
+app.get('/controlepessoal', (req, res) => {
+    db.query('SELECT * FROM controlepessoal', (err, results) => {
+        if (err) {
+            return res.status(500).json({ error: err });
+        }
+        res.json(results);
+    });
+});
+
 app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`);
 });
