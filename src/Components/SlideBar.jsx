@@ -26,7 +26,7 @@ const SlideBar = () => {
                             <Link to="/consultas">Consultas</Link>
                         </li>
                         <li>
-                            <Link to="/database">Banco de dados</Link> {/* Rota interna */}
+                            <Link to="/database/login">Banco de dados</Link> {/* Rota interna */}
                         </li>
                     </ul>
                 )}

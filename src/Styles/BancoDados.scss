@@ -1,7 +1,43 @@
 .bancoDeDados {
     width: 100%;
+    padding: 20px;
 
-    // Estilos para a tabela
+    h1 {
+        color: #333;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .filtro-input {
+        margin-bottom: 10px;
+        padding: 8px;
+        width: 100%;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+    // Estilos para a lista de tabelas
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 20px;
+
+        li {
+            padding: 8px;
+            border: 1px solid #ddd;
+            margin-bottom: 5px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: #e2e2e2;
+                cursor: pointer;
+            }
+        }
+    }
+
+    // Estilos para a tabela de dados
     table {
         width: 100%;
         border-collapse: collapse;
@@ -33,35 +69,5 @@
             color: white;
             font-weight: bold;
         }
-    }
-
-    // Estilos para a lista
-    ul {
-        list-style-type: none;
-        padding: 0;
-        margin-top: 20px;
-
-        li {
-            padding: 8px;
-            border: 1px solid #ddd;
-            margin-bottom: 5px;
-            background-color: #f9f9f9;
-            border-radius: 5px;
-
-            &:hover {
-                background-color: #e2e2e2;
-                cursor: pointer;
-            }
-        }
-    }
-
-    // Estilos para o campo de filtro
-    .filtro-input {
-        margin-bottom: 10px;
-        padding: 8px;
-        width: 100%;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        font-size: 1rem;
     }
 }

@@ -1,9 +1,10 @@
 import React from "react";
+import BancoDeDados from "../Components/BancoDeDados";
 
 const Consultas = () =>{
     return <>
         <div>
-            <p>Consultas</p>
+            <BancoDeDados />
         </div>
     </>
 }

@@ -26,7 +26,7 @@ const BancoDeDados = () => {
 
         const fetchDadosControlePessoal = async () => {
             try {
-                const response = await fetch('http://localhost:5000/controlepessoal');
+                const response = await fetch('http://localhost:5000/tabelas');
                 if (!response.ok) {
                     throw new Error('Erro ao buscar dados de controlepessoal');
                 }
@@ -44,7 +44,12 @@ const BancoDeDados = () => {
     if (loading) return <div>Carregando...</div>;
     if (error) return <div>Erro: {error}</div>;
 
-    // Filtragem dos dados
+    // Filtragem das tabelas
+    const tabelasFiltradas = tabelas.filter((tabela) => 
+        tabela.table_name.toLowerCase().includes(filtro.toLowerCase())
+    );
+
+    // Filtragem dos dados da tabela ControlePessoal
     const dadosFiltrados = dadosControlePessoal.filter((row) => {
         return Object.values(row).some(value => 
             value && value.toString().toLowerCase().includes(filtro.toLowerCase())
@@ -54,39 +59,23 @@ const BancoDeDados = () => {
     return (
         <div className="bancoDeDados">
             <h1>Tabelas do Banco de Dados</h1>
-            <ul>
-                {tabelas.map((tabela, index) => (
-                    <li key={index}>{tabela[`Tables_in_controlepessoal`]}</li>
-                ))}
-            </ul>
 
-            <h1>Dados da Tabela ControlePessoal</h1>
+            {/* Campo de pesquisa para filtrar tabelas */}
             <input 
                 type="text" 
                 className="filtro-input" 
-                placeholder="Filtrar dados..." 
+                placeholder="Pesquisar tabelas..." 
                 value={filtro} 
                 onChange={(e) => setFiltro(e.target.value)} 
             />
-            <table>
-                <thead>
-                    <tr>
-                        {dadosControlePessoal.length > 0 &&
-                            Object.keys(dadosControlePessoal[0]).map((key) => (
-                                <th key={key}>{key}</th>
-                            ))}
-                    </tr>
-                </thead>
-                <tbody>
-                    {dadosFiltrados.map((row, index) => (
-                        <tr key={index}>
-                            {Object.values(row).map((value, idx) => (
-                                <td key={idx}>{value}</td>
-                            ))}
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
+
+            <ul>
+                {tabelasFiltradas.map((tabela, index) => (
+                    <li key={index}>{tabela.table_name}</li>
+                ))}
+            </ul>
+
+            
         </div>
     );
 };
