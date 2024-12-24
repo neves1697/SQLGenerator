@@ -8,15 +8,47 @@
 
 .container-interno {
     color: #b0b0b0; /* Cinza claro com um tom pastel */
+    display: flex;
+    flex-direction: column; /* Permite que a estrutura interna use flex */
+    align-items: center;  /* Alinha os itens no centro horizontalmente */
+    width: 100%;
 }
 
-.textos{
+.textos {
     background-color: #4a4a4a; /* Tom de cinza escuro */
     border-radius: 10px;
-    
-    p{
+    padding: 20px; /* Espaçamento interno */
+    width: 700px;
+    text-align: center;
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    p {
         padding: 0 20px; /* 0px para cima e para baixo, 20px para esquerda e direita */
-        width: 700px;
+        width: 100%;
         height: 80px;
     }
+}
+
+.informacoes {
+    display: flex; /* Usando flexbox para colocar as divs lado a lado */
+    justify-content: space-between; /* Distribui igualmente as divs de consulta */
+    gap: 20px; /* Espaçamento entre as divs */
+    width: 100%; /* 100% da largura disponível */
+    margin-top: 20px;
+}
+
+.consultas {
+    background-color: red;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 150px;
+    width: 45%; /* Ocupa metade da largura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
