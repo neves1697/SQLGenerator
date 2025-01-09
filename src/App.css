@@ -1,8 +1,22 @@
-.app {
-  text-align: center;
-  
+/* Reset de CSS básico */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
 }
 
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+/* Seu CSS específico para a aplicação */
+.app {
+  text-align: center;
+}
 
 .App-logo {
   height: 40vmin;

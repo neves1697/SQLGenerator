@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/Inicio.scss";
+import BancoDeDados from "../Components/BancoDeDados";
 
 const Inicio = () => {
     return (
@@ -16,7 +17,15 @@ const Inicio = () => {
 
                 <div className="informacoes">
                     <div className="consultas">
-                        teste
+                        Consultas Salvas
+                    </div>
+                    <div className="consultas">
+                        Consultas prontas
+                    </div>
+                </div>
+                <div className="informacoes">
+                    <div className="consultas">
+                        Criar consultas
                     </div>
                     <div className="consultas">
                         teste
