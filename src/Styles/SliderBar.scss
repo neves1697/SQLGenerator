@@ -11,14 +11,18 @@
     padding: 20px;
     text-align: start;
     transition: width 0.3s;
+    border: 1px solid #6e6767d7; /* Borda de 2px, estilo sólido e cor vermelha */
     /* Transição para suavizar o efeito */
+}
+
+.slidebar:hover{
+    background-color: #383636;
 }
 
 .slidebar.collapsed {
     width: 50px;
     /* Largura reduzida quando recolhida */
     padding: 20px 5px;
-    /* Ajusta o padding */
 }
 
 .slidebar ul {
@@ -61,4 +65,8 @@ button {
     /* Remove o margin padrão */
     cursor: pointer;
     /* Muda o cursor para indicar que é clicável */
+}
+
+.icone-slidebar:hover{
+    border: 2px solid #6e6767d7; /* Borda de 2px, estilo sólido e cor vermelha */
 }

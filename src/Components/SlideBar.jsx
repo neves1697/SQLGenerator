@@ -14,7 +14,7 @@ const SlideBar = () => {
         <>
             <div className={`slidebar ${isExpanded ? "expanded" : "collapsed"}`}>
                 <button onClick={toggleSidebar}>
-                    <FaBars color="white" size={25} />
+                    <FaBars color="white" size={30} className="icone-slidebar" />
                 </button>
 
                 {isExpanded && ( // Exibe o menu apenas se expandido
