@@ -17,7 +17,7 @@ const Inicio = () => {
 
                 <div className="informacoes">
                     <div className="consultas">
-                        Consultas Salvas
+                        Criar consultas personalizadas
                     </div>
                     <div className="consultas">
                         Consultas prontas
@@ -25,10 +25,10 @@ const Inicio = () => {
                 </div>
                 <div className="informacoes">
                     <div className="consultas">
-                        Criar consultas
+                        Comparar valores / notas fiscais
                     </div>
                     <div className="consultas">
-                        teste
+                        Anotações
                     </div>
                 </div>
             </div>
