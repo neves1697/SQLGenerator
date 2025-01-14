@@ -14,7 +14,7 @@ const Modal = ({ isOpen, onClose, children }) => {
     <div className="modal-overlay">
       <div className="modal-content">
         <button className="close-button" onClick={onClose}>
-          <IoMdCloseCircleOutline size={30} color='white' />
+          <IoMdCloseCircleOutline size={30} color='white' />          
         </button>
         {children} {/* Exibe o conteúdo passado para o Modal */}
       </div>
