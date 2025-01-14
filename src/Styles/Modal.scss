@@ -16,9 +16,10 @@
     padding: 20px;
     border-radius: 8px;
     position: relative;
-    max-width: 500px;
-    width: 30%;
-    height: 600px;
+    max-width: 800px;
+    width: 100%;
+    height: 90%;
+    background: linear-gradient(135deg, #3a3434, #3a3939, #454343, #515050); /* Degradê mais suave */
   }
   
   .close-button {
