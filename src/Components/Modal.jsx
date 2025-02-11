@@ -1,10 +1,6 @@
 import React from 'react';
 import "../Styles/Modal.scss";
-import { AiTwotoneCloseSquare } from "react-icons/ai";
 import { IoMdCloseCircleOutline } from "react-icons/io";
-import { AiFillCloseCircle } from "react-icons/ai";
-
-
 
 const Modal = ({ isOpen, onClose, children }) => {
   // Se o modal não estiver aberto, não renderiza nada

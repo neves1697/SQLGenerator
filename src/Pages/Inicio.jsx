@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "../Styles/Inicio.scss";
 import Modal from "../Components/Modal"; // Importe o modal
 import BancoDeDados from "../Components/BancoDeDados";
+import { Link } from "react-router-dom";
+import "../Styles/Input.scss";
 
 const Inicio = () => {
   const [isModalOpen, setIsModalOpen] = useState(false); // Estado para controlar o modal
@@ -46,7 +48,13 @@ const Inicio = () => {
 
       {/* Modal */}
       <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
-        Teste
+        <div className="sql">
+          Teste
+          <input type="text" name="" id="input-sql"  />
+          <button type="submit">
+            Salvar
+          </button>
+        </div>
       </Modal>
     </div>
   );
