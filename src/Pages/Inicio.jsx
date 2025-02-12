@@ -49,12 +49,16 @@ const Inicio = () => {
       {/* Modal */}
       <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
         <div className="sql">
-          Teste
-          <input type="text" name="" id="input-sql"  />
-          <button type="submit">
-            Salvar
-          </button>
+          <h2>Teste</h2>
+          <input type="text" name="" id="input-sql" />
+          
         </div>
+        
+        <div className="botao-teste">
+            <button type="submit" className="botao-consulta-personalizada">
+              Salvar
+            </button>
+          </div>
       </Modal>
     </div>
   );

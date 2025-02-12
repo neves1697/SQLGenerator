@@ -1,15 +1,31 @@
-.sql{
+.sql {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    
 }
 
-#input-sql {
-    background-color: rgba(128, 128, 128, 0.096);
-    border-radius: 10px;
-    height: 550px;
-    width:550px;
+.botao-consulta-personalizada {
+    text-decoration: none;
+    text-align: center;
+    background-color: antiquewhite;
+    margin-top: 3%;
+    height: 25px;
+    width: 75px;
+    border-radius: 7px;
+    //margin-left: 450px;
     
+    
+}
+
+
+// IDs
+
+#input-sql {
+    margin-top: 10px;
+    background-color: rgba(128, 128, 128, 0.096);
+    border-radius: 12px;
+    height: 500px;
+    width: 550px;
 }
