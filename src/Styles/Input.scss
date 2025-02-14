@@ -1,31 +1,45 @@
 .sql {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    
+    align-items: center;
+    color: antiquewhite;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+
+.input-container {
+    width: 80%;
+}
+
+#input-sql {
+    width: 100%; // Garante que ocupa 70% do modal (pois a div pai já está com 70%)
+    height: 500px; // Mantém a altura proporcional ao modal
+    padding: 10px;
+    border-radius: 12px;
+    border: 3px solid rgba(156, 107, 42, 0.863);
+    background-color: rgba(128, 128, 128, 0.096);
+    resize: none; // Impede o redimensionamento manual
+    text-align: left; // Garante que o texto comece do lado esquerdo
+    word-wrap: break-word; // Quebra automática de palavras
+    white-space: pre-wrap; // Mantém quebras de linha feitas pelo usuário
+    color: white;
+}
+
+.botao-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
 }
 
 .botao-consulta-personalizada {
-    text-decoration: none;
-    text-align: center;
     background-color: antiquewhite;
-    margin-top: 3%;
-    height: 25px;
-    width: 75px;
+    height: 35px;
+    width: 95px;
     border-radius: 7px;
-    //margin-left: 450px;
-    
-    
-}
-
-
-// IDs
-
-#input-sql {
-    margin-top: 10px;
-    background-color: rgba(128, 128, 128, 0.096);
-    border-radius: 12px;
-    height: 500px;
-    width: 550px;
+    text-align: center;
+    cursor: pointer;
 }

@@ -6,14 +6,15 @@ import { Link } from "react-router-dom";
 import "../Styles/Input.scss";
 
 const Inicio = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false); // Estado para controlar o modal
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [consulta, setConsulta] = useState(""); // Estado para capturar o texto
 
   const handleOpenModal = () => {
-    setIsModalOpen(true); // Abre o modal
+    setIsModalOpen(true);
   };
 
   const handleCloseModal = () => {
-    setIsModalOpen(false); // Fecha o modal
+    setIsModalOpen(false);
   };
 
   return (
@@ -24,41 +25,41 @@ const Inicio = () => {
           <p>
             SQL Generator é uma aplicação que ajuda a montar SQLs para
             executar nos clientes. Traz algumas consultas prontas e alguns
-            recursos experimentais
+            recursos experimentais.
           </p>
         </div>
 
         <div className="informacoes">
-          <div className="consultas" onClick={handleOpenModal}> {/* Adiciona o evento de clique */}
+          <div className="consultas" onClick={handleOpenModal}>
             Criar consultas personalizadas
           </div>
-          <div className="consultas">
-            Consultas prontas
-          </div>
+          <div className="consultas">Consultas prontas</div>
         </div>
         <div className="informacoes">
-          <div className="consultas">
-            Comparar valores / notas fiscais
-          </div>
-          <div className="consultas">
-            Anotações
-          </div>
+          <div className="consultas">Comparar valores / notas fiscais</div>
+          <div className="consultas">Anotações</div>
         </div>
       </div>
 
       {/* Modal */}
       <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
         <div className="sql">
-          <h2>Teste</h2>
-          <input type="text" name="" id="input-sql" />
-          
-        </div>
-        
-        <div className="botao-teste">
-            <button type="submit" className="botao-consulta-personalizada">
-              Salvar
-            </button>
+          <h2>Criar Consulta</h2>
+          <div className="input-container">
+            <textarea
+              id="input-sql"
+              value={consulta}
+              onChange={(e) => setConsulta(e.target.value)}
+              placeholder="Digite sua consulta aqui..."
+            />
           </div>
+        </div>
+
+        <div className="botao-container">
+          <button type="submit" className="botao-consulta-personalizada">
+            Salvar
+          </button>
+        </div>
       </Modal>
     </div>
   );
