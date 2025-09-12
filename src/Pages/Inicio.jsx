@@ -21,11 +21,10 @@ const Inicio = () => {
     <div className="container-home">
       <div className="container-interno">
         <div className="textos">
-          <h1>SQL Generator</h1>
+          <h1>TREVO CRM</h1>
           <p>
-            SQL Generator é uma aplicação que ajuda a montar SQLs para
-            executar nos clientes. Traz algumas consultas prontas e alguns
-            recursos experimentais.
+            O TREVO CRM é uma aplicação web para facilitar armazenar consultas SQL, comparação de notas e valores e também fazer algumas anotações.
+            Quem sabe, até possa ter um chatzinho aí para nós, usando IA? Não sei, quem sabe.
           </p>
         </div>
 

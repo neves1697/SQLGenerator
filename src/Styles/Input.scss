@@ -1,3 +1,4 @@
+/* Estilo para o modal e o container do SQL */
 .sql {
     display: flex;
     flex-direction: column;
@@ -10,24 +11,35 @@
     }
 }
 
+/* Container do input para controlar a largura */
 .input-container {
-    width: 80%;
+    width: 80%; /* Ocupa 80% do modal para garantir que o input fique bem posicionado */
 }
 
+/* Estilo para o textarea */
 #input-sql {
-    width: 100%; // Garante que ocupa 70% do modal (pois a div pai já está com 70%)
-    height: 500px; // Mantém a altura proporcional ao modal
-    padding: 10px;
+    width: 100%; /* Garante que o textarea ocupe 100% da largura da div pai (80% do modal) */
+    height: 500px; /* Ajusta a altura conforme necessário */
+    padding: 15px;
     border-radius: 12px;
     border: 3px solid rgba(156, 107, 42, 0.863);
     background-color: rgba(128, 128, 128, 0.096);
-    resize: none; // Impede o redimensionamento manual
-    text-align: left; // Garante que o texto comece do lado esquerdo
-    word-wrap: break-word; // Quebra automática de palavras
-    white-space: pre-wrap; // Mantém quebras de linha feitas pelo usuário
-    color: white;
+    resize: none; /* Impede o redimensionamento manual */
+    text-align: left; /* Alinha o texto à esquerda */
+    word-wrap: break-word; /* Quebra de palavras quando necessário */
+    white-space: pre-wrap; /* Mantém as quebras de linha feitas pelo usuário */
+    color: white; /* Cor do texto */
+    font-family: "Courier New", Courier, monospace; /* Fonte monoespaçada */
+    font-size: 14px; /* Define o tamanho da fonte */
 }
 
+/* Destacar palavras reservadas em SQL */
+.sql-keyword {
+    color: #ff7b00; /* Cor para as palavras reservadas */
+    font-weight: bold; /* Deixa as palavras reservadas em negrito */
+}
+
+/* Container do botão para centralizar */
 .botao-container {
     display: flex;
     justify-content: center;
@@ -35,6 +47,7 @@
     width: 100%;
 }
 
+/* Estilo do botão */
 .botao-consulta-personalizada {
     background-color: antiquewhite;
     height: 35px;
@@ -43,3 +56,39 @@
     text-align: center;
     cursor: pointer;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .input-container {
+        width: 90%; /* Aumenta a largura do input em telas menores */
+    }
+
+    #input-sql {
+        height: 300px; /* Diminui a altura do input em telas pequenas */
+    }
+
+    .botao-consulta-personalizada {
+        width: 80px; /* Ajusta o botão em telas menores */
+    }
+}
+
+/* Estilos adicionais para o CodeMirror */
+.cm-s-default {
+    font-family: "Courier New", Courier, monospace; /* Fonte monoespaçada */
+    font-size: 14px; /* Tamanho da fonte */
+  }
+  
+  .CodeMirror {
+    height: 500px; /* Definir a altura do editor */
+    border-radius: 12px; /* Borda arredondada */
+    background-color: rgba(128, 128, 128, 0.096); /* Cor de fundo */
+  }
+  
+  .CodeMirror-lines {
+    color: white; /* Cor do texto */
+  }
+  
+  .CodeMirror-gutter {
+    background-color: #333; /* Cor de fundo do gutter (área de números de linha) */
+  }
+  
