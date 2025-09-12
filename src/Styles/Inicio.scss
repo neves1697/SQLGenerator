@@ -10,24 +10,24 @@
     // color: #b0b0b0; /* Cinza claro com um tom pastel */
     color: rgba(255, 255, 255, 0.781);
     display: flex;
-    flex-direction: column; /* Estrutura flex em coluna */
-    align-items: center;  /* Alinha os itens ao centro */
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    max-width: 100%; /* Garante que a largura não ultrapasse 100% */
-    padding: 20px; /* Espaçamento interno */
-    box-sizing: border-box; /* Garante que padding seja incluído no cálculo de largura */
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .textos {
-    background-color: #4a4a4a; /* Cinza escuro */
+    background-color: #4a4a4a;
     border-radius: 10px;
-    padding: 20px; /* Espaçamento interno */
-    width: 100%; /* Ajusta a largura para ocupar até 100% */
-    max-width: 700px; /* Limita a largura a 700px */
+    padding: 20px;
+    width: 100%;
+    max-width: 700px;
     text-align: center;
-    margin-top: 10px; /* Espaço superior */
-    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
-    border: 2px solid #6e6767d7; /* Borda de 2px, estilo sólido e cor vermelha */
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 2px solid #6e6767d7;
 }
 
 .textos h1 {
@@ -36,42 +36,41 @@
 }
 
 .textos p {
-    padding: 0 20px; /* 0px para cima e para baixo, 20px para esquerda e direita */
+    padding: 0 20px;
     height: 80px;
     text-align: center;
-    line-height: 1.5; /* Ajuste para melhorar a legibilidade */
+    line-height: 1.5;
 }
 
 .informacoes {
-    display: flex; /* Flexbox para colocar as divs lado a lado */
-    justify-content: space-evenly; /* Espaço entre as divs */
-    gap: 10px; /* Espaçamento entre as divs */
-    width: 100%; /* 100% da largura disponível */
-    margin-top: 20px; /* Espaço acima */
-    box-sizing: border-box; /* Garante que padding seja incluído no cálculo de largura */
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
     color: rgba(255, 255, 255, 0.781);
 }
 
 .consultas {
-    background: linear-gradient(135deg, #3a3434, #3a3939, #454343, #515050); /* Degradê mais suave */
+    background: linear-gradient(135deg, #3a3434, #3a3939, #454343, #515050);
     cursor: pointer;
     text-align: center;
     border-radius: 10px;
     height: 150px;
-    width: 45%; /* Ocupa metade da largura */
-    max-width: 45%; /* Garante que não ultrapasse 45% da largura */
+    width: 45%;
+    max-width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease-in-out; /* Transição para efeito hover */
-    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box;
 }
 
 .consultas:hover {
-    transform: scale(1.05); /* Aumenta um pouco o tamanho ao passar o mouse */
+    transform: scale(1.05);
 }
 
-/* Adicionando uma sombra sutil para dar um efeito de profundidade */
 .consultas {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }

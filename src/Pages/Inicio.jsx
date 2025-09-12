@@ -32,18 +32,21 @@ const Inicio = () => {
           <div className="consultas" onClick={handleOpenModal}>
             Criar consultas personalizadas
           </div>
-          <div className="consultas">Consultas prontas</div>
+          <div className="consultas">Consultas salvas</div>
         </div>
         <div className="informacoes">
-          <div className="consultas">Comparar valores / notas fiscais</div>
+          <div className="consultas">Comparar valores / notas fiscais <br /> </div>
           <div className="consultas">Anotações</div>
         </div>
       </div>
 
-      {/* Modal */}
       <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
         <div className="sql">
           <h2>Criar Consulta</h2>
+          <div className="input-titulo-criar-consulta">
+            <h3>Descrição da consulta</h3>
+            <input type="text" />
+          </div>
           <div className="input-container">
             <textarea
               id="input-sql"
