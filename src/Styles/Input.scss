@@ -5,7 +5,7 @@
     align-items: center;
     color: antiquewhite;
     text-align: center;
-
+    margin-top: 15px;
     h2 {
         margin-bottom: 20px;
     }
@@ -13,13 +13,13 @@
 
 /* Container do input para controlar a largura */
 .input-container {
-    width: 80%; /* Ocupa 80% do modal para garantir que o input fique bem posicionado */
+    width: 70%;
 }
 
 /* Estilo para o textarea */
 #input-sql {
     width: 100%; /* Garante que o textarea ocupe 100% da largura da div pai (80% do modal) */
-    height: 500px; /* Ajusta a altura conforme necessário */
+    height: 350px; /* Ajusta a altura conforme necessário */
     padding: 15px;
     border-radius: 12px;
     border: 3px solid rgba(156, 107, 42, 0.863);
