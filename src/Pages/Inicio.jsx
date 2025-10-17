@@ -45,7 +45,7 @@ const Inicio = () => {
           <h2>Criar Consulta</h2>
           <div className="input-titulo-criar-consulta">
             <h3>Descrição da consulta</h3>
-            <input type="text" />
+            <input type="text" placeholder="Descrição/Título da consulta"id="teste"/>
           </div>
           <div className="input-container">
             <textarea

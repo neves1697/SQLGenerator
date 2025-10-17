@@ -1,7 +1,8 @@
 .container-home {
     display: flex;
     justify-content: center;
-    background: linear-gradient(135deg, #333333ef, #3a3939ef, #454343ef, #515050ef); /* Degradê para o fundo */
+    background: linear-gradient(135deg, #333333ef, #3a3939ef, #454343ef, #515050ef);
+    /* Degradê para o fundo */
     width: 100%;
     height: 100vh;
 }
@@ -73,6 +74,29 @@
 
 .consultas {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.input-titulo-criar-consulta {
+    background-color: #4a4a4a4f;
+    border: 2px solid #6e676763;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    input{
+        text-align: center;
+    }
+
+    input {
+        border-radius: 5px;
+        width: 100%;
+    }
+
 }
 
 /*
